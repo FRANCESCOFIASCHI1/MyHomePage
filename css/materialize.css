@@ -1024,7 +1024,6 @@
 .teal.lighten-1 {
   background-color: #e25d5d !important;
   text-shadow:2px 2px 2px #000000
-  
 }
 
 .teal-text.text-lighten-1 {
@@ -3514,7 +3513,6 @@ table span.badge {
 }
 
 .section.no-pad-bot {
-  padding-top:100px;
   padding-bottom: 0;
 }
 
