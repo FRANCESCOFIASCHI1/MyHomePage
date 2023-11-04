@@ -11,8 +11,10 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <!---Script per nascondere il pannello-->
   <script>
-    document.getElementById("linkDaCliccare").addEventListener("click", function() {
-      document.getElementById("nav-mobile").style.display = "none";
+    document.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("linkDaCliccare").addEventListener("click", function(event) {
+        document.getElementById("nav-mobile").style.display = "none"; // Nascondi il pannello
+      });
     });
     </script>
     <!---FIne Script-->
