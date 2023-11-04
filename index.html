@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/84ce8ae6a40e7e222db1367c2/260eb3897b0313cf5abc109fa.js");</script>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Francesco Fiaschi</title>
@@ -10,18 +9,43 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <!---Script per nascondere il pannello-->
+  <script>
+    document.getElementById("linkDaCliccare").addEventListener("click", function() {
+      document.getElementById("nav-mobile").style.display = "none";
+    });
+    </script>
+    <!---FIne Script-->
 </head>
 <body>
   <nav class="white" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" class="brand-logo" href="#" ><img src="logo_1.png" height="12%" width="12%" ></a>
-      <ul class="right hide-on-med-and-down">
-        <a href="#Contact" name=Button>Francesco Fiaschi</a>
+    <div class="nav-wrapper container" style="width: auto;">
+      <a id="logo-container" class="brand-logo" href="#" style="text-align: center">
+        <img src="logo_1.png" height="16%" width="16%" class="center-logo">
+      </a>
+      <ul class="right hide-on-med-and-down" style="margin-right: 15%;">
+        <li><a href="#Contact" name=Button >Francesco Fiaschi</a></li>
+      </ul>
+      <ul id="nav-mobile" class="sidenav">
+        <li style="text-align: center;">
+          <img style="height: 16%; width: 16%; text-align: center;" src="logo_1.png" class="center-logo">
+        </li>
+        <li><a style="font-size:26px; text-align: center;" href="">Francesco Fiaschi</a></li>
+        <hr style="width: 85%;">  <!---Divisiorio per indice-->
+        <li>
+          <a style="font-size: 20px;" href="">Indice:</a>
+        </li>
+        <li>
+          <a id="linkDaCliccare" class="white-text-link" style="font-size:12px;" href="#interessi">Interessi</a>
+        </li>
+        <li>
+          <a id="linkDaCliccare" class="white-text-link" style="font-size:12px;" href="#contattami">Contattami</a>
+        </li>
+        <li>
+          <a id="linkDaCliccare" class="white-text-link" style="font-size:12px;" href="#iscriviti">Iscrizione</a>
+        </li>
       </ul>
 
-      <ul id="nav-mobile" class="sidenav">
-        <li><a style="font-size:26px" href="">Francesco Fiaschi</a></li>
-      </ul>
       <a href="" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
@@ -49,13 +73,13 @@
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center_1 brown-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center_1">Presentation</h5>
+            <h5 class="center_1">Presentazione</h5>
 
             <p class="light">Ciao, sono Francesco, uno studente di informatica. La mia passione è la programmazione, e attraverso questo sito voglio condividere con voi i miei progetti.</p>
           </div>
         </div>
 
-        <div class="col s12 m4">
+        <div id="interessi" class="col s12 m4">
           <div class="icon-block">
             <h2 class="center_1 brown-text"><i class="material-icons">group</i></h2>
             <h5 class="center_1">Passione per Sofware</h5>
@@ -93,10 +117,10 @@
   <div class="container">
     <div class="section">
 
-      <div class="row">
+      <div id="contattami"class="row">
         <div class="col s12 center_1">
           <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
+          <h4>Contattami</h4>
           <p class="left-align light">Sono disponibile per fornirti assistenza per raggiungere i tuoi obbiettivi. Il mio obbiettivo è quello di fornire un software per risolvere esigenze e necessità su misura per te, con possibilità di un piano di assistenza; se ti interessa la mia proposta ti invito a scrivermi via email oppure iscrivendoti tramite il bottone</p>
           <!-- <a style="border: 2px solid black; padding: 7px;" href="#Button">"GET STARTED"</a> -->
           <h5 style="text-align: center;" class="header col s12 light">Your FUTURE is created by what YOU DO TODAY not tomorrow</h5>
@@ -110,7 +134,7 @@
   <div class="parallax-container-other valign-wrapper" style="background-color: rgba(0, 0, 0, 0.3);">
     <div class="section no-pad-bot" >
       <div class="container">
-        <div class="row center">
+        <div id="iscriviti"class="row center">
           <div id="mc_embed_shell">
             <div id="mc_embed_signup" style="text-align: center; background-position: center;" class="header col s12 light">
               <form action="https://gmail.us17.list-manage.com/subscribe/post?u=84ce8ae6a40e7e222db1367c2&amp;id=3b0e5e3ff9&amp;f_id=00c710e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
@@ -155,7 +179,7 @@
           
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Contact</h5>
+          <h5 class="white-text">Contatti</h5>
           <a name="Contact"></a>
           <ul>
             <li><a class="white-text-link" target="_blank" href="https://github.com/FRANCESCOFIASCHI1">Profilo GitHub</a></li>

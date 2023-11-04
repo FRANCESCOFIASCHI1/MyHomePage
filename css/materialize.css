@@ -3,6 +3,20 @@
  * Copyright 2014-2017 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
+
+
+/* CSS per rendere il logo più grande nella visualizzazione da smartphone */
+@media (max-width: 600px) {
+  .center-logo {
+    display: block;
+    margin: auto; /* Imposta il margine a "auto" per centrare l'immagine */
+    height: 40%;
+    width: 40%;
+  }
+}
+
+
+
 .materialize-red {
   background-color: #e51c23 !important;
 }
