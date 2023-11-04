@@ -10,14 +10,6 @@
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <!---Script per nascondere il pannello-->
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      document.getElementById("linkDaCliccare").addEventListener("click", function(event) {
-        document.getElementById("nav-mobile").style.display = "none"; // Nascondi il pannello
-      });
-    });
-    </script>
-    <!---FIne Script-->
 </head>
 <body>
   <nav class="white" role="navigation">
@@ -35,17 +27,25 @@
         <li><a style="font-size:26px; text-align: center;" href="">Francesco Fiaschi</a></li>
         <hr style="width: 85%;">  <!---Divisiorio per indice-->
         <li>
-          <a style="font-size: 20px;" href="">Indice:</a>
+          <a style="font-size: 20px;" href="">Home:</a>
         </li>
         <li>
-          <a id="linkDaCliccare" class="white-text-link" style="font-size:12px;" href="#interessi">Interessi</a>
+          <a class="white-text-link" style="font-size:12px;" href="#interessi">Interessi</a>
         </li>
         <li>
-          <a id="linkDaCliccare" class="white-text-link" style="font-size:12px;" href="#contattami">Contattami</a>
+          <a class="white-text-link" style="font-size:12px;" href="#contattami">Contattami</a>
         </li>
         <li>
-          <a id="linkDaCliccare" class="white-text-link" style="font-size:12px;" href="#iscriviti">Iscrizione</a>
+          <a class="white-text-link" style="font-size:12px;" href="#iscriviti">Iscrizione</a>
         </li>
+        <footer>
+          <div class="footer-copyright" style="position: absolute; bottom: 0; width: 100%;">
+            <div class="container">
+              <span style="color: black; display: inline-block;">Made by</span> <a style="font-weight: bold; display: inline-block;">Francesco Fiaschi</a>
+              <a></a>
+            </div>
+          </div>
+        </footer>
       </ul>
 
       <a href="" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -193,7 +193,7 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      Made by <a style="font-weight: bold; color: white;">Francesco Fiaschi</a>
       </div>
     </div>
   </footer>
